@@ -187,6 +187,8 @@ function end(win) {
 }
 
 function handlePlayAgainPress() {
+  e.preventDefault();
+  
   document.querySelector(".overlay").remove();
   document.querySelectorAll(".key").forEach(key => {
     key.classList.remove("green");

@@ -9,7 +9,7 @@
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 100;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 
@@ -22,10 +22,12 @@
 
 .endCard.win {
   background-color: #c7efc1;
+  margin-bottom: 125px;
 }
 
 .endCard.lose {
   background-color: #ffd0d0;
+  margin-bottom: 100px;
 }
 
 .endTitle {
