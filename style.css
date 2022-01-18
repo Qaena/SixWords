@@ -1,0 +1,188 @@
+* {
+  margin: 0px;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.endCard {
+  position: fixed;
+  width: 90%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px 1px #414141;
+}
+
+.endCard.win {
+  background-color: #c7efc1;
+}
+
+.endCard.lose {
+  background-color: #ffd0d0;
+}
+
+.endTitle {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: xx-large;
+  margin-top: 10px;
+}
+
+.endText {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  margin-top: 5px;
+}
+
+.playAgainButton {
+  text-align: center;
+  background-color: #d0ddf3;
+  margin-top: 20px;
+  border-top: 1px solid #93afdf;
+  height: 48px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  line-height: 48px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: x-large;
+}
+
+.appContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.wordsContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 5px;
+}
+
+.word {
+  flex-basis: 0;
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.active.word {
+  box-shadow: 0px 0px 5px 1px #3b65af;
+}
+
+.active.word.error {
+  box-shadow: 0px 0px 5px 1px #af3b3b;
+  background-color: #edd8d8;
+}
+
+.letter {
+  flex-basis: 20%;
+  margin: 2px;
+  border-radius: 2px;
+  background-color: #f3f3f3;
+  border: 1px solid #d6d6d6;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: xx-large;
+}
+
+.active .letter {
+  background-color: #ebebeb;
+  border: 1px solid #b8b8b8;
+}
+
+.active.letter {
+  background-color: #d0ddf3;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 2px;
+}
+
+.key {
+  flex-basis: 0;
+  flex-grow: 4;
+  margin: 2px;
+  text-align: center;
+  height: 48px;
+  line-height: 48px;
+  background-color: gainsboro;
+  border-radius: 6px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: x-large;
+  box-shadow: 0px 1px #afafaf;
+}
+
+.backspace {
+  flex-grow: 5;
+  background-color: #ffd0d0;
+}
+
+.enter {
+  flex-grow: 0;
+  flex-basis: 25%;
+  height: 75px;
+  line-height: 75px;
+  background-color: #d0ffd0;
+}
+
+.halfKey {
+  flex-basis: 0;
+  flex-grow: 2;
+  margin: 1px;
+}
+
+.quarterKey {
+  flex-basis: 0;
+  flex-grow: 1;
+  margin: 1px;
+}
+
+.preZKey {
+  flex-basis: 0;
+  flex-grow: 6;
+  margin: 1px;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 4px;
+}
+
+.shaded {
+  filter: brightness(0.8);
+  transform: translateY(1px);
+}
+
+.gray {
+  background-color: #bfbfbf;
+}
+
+.yellow {
+  background-color: #f2f3ac;
+}
+
+.green {
+  background-color: #c7efc1;
+}
